@@ -3,7 +3,7 @@
 <!--[if IE 8 ]><html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="ie8"><![endif]-->
 <!--[if IE 9 ]><html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="ie9"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-<html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>">
+<html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="bg-dark text-warning">
 <!--<![endif]-->
 <head>
 <meta charset="UTF-8" />
@@ -21,8 +21,6 @@
 <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
-
-<link href="catalog/view/theme/default/stylesheet/stylesheet-rtl.css" rel="stylesheet">
 <link href="catalog/view/javascript/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet" media="screen" />
 <script src="view/javascript/jquery/datetimepicker/calendar.js" type="text/javascript"></script>
 <script src="view/javascript/jquery/datetimepicker/moment.farsi.js" type="text/javascript"></script>
@@ -43,6 +41,8 @@
 <?php foreach ($analytics as $analytic) { ?>
 <?php echo $analytic; ?>
 <?php } ?>
+<link href="catalog/view/theme/default1/stylesheet/css.css" rel="stylesheet">
+
 </head>
 <body class="<?php echo $class; ?>">
 <nav id="top">

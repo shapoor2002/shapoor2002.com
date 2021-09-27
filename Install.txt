@@ -1,0 +1,37 @@
+~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~
+Persian IRAN Language Pack for Opencart v2.3.0.2
+~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~
+
+Installation Guide - install.txt
+gh.m (web365.ir)
+Contact: shop@web365.ir
+Last Update: 03 August 2016
+
+========================
+Installation Instruction
+========================
+1- Upload all files from "upload" folder to the Opencart root of your server.
+
+Warning: Make sure your OpenCart version is v2.3.0.2
+
+2- Login your opencart admin and go to System > Localisation > Languages
+
+3- Insert a new language, Complete the form as follow:
+
+Language Name:  Persian IRAN
+Code:  	  		fa_ir
+Locale:   		fa,fa-ir,fa-ir.UTF-8,fa_ir.UTF-8,fa_ir,persian,IRAN
+Image: 	  		ir.png
+Directory:   	persian
+Status:   		Enabled
+Sort Order:  	1
+
+To make the Persian language as the default one, in your admin go to System > Settings > Click edit on your store > then go to the tab Local, select the language "Persian IRAN" and save it.
+
+4- Install VQMod & Vqmod Manager the form as follow:
+Install the latest version of VQMod (vqmod.com) and upload the contents of the /upload folder to the root of your OpenCart store. 
+It will appear in the menu under Extension->VQMod Manager. 
+To access make sure your user group has access/modify permissions for module/vqmod_manager. 
+=========================
+نصب زبان فارسی در نسخه 2.3.0.2 اپن کارت
+=========================

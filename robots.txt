@@ -1,0 +1,16 @@
+user-agent: *
+Allow: /
+Disallow: /*&limit
+Disallow: /*&sort
+Disallow: /*?route=checkout/
+Disallow: /*?route=account/
+Disallow: /*?route=product/search
+Disallow: /*?route=affiliate/
+Disallow: /admin/
+Disallow: /catalog/
+Disallow: /install/
+Disallow: /system/
+Disallow: /vqmod/
+Allow: /image/
+Allow: /image/data/
+ 

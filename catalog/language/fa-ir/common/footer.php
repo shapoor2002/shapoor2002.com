@@ -14,5 +14,5 @@ $_['text_account']      = 'حساب کاربری';
 $_['text_order']        = 'تاریخچه سفارشات';
 $_['text_wishlist']     = 'لیست دلخواه';
 $_['text_newsletter']   = 'اشتراک خبرنامه';
-$_['text_powered']      = 'Powered By <a href="http://www.opencart.com">OpenCart</a><br /> %s &copy; %s';
+$_['text_powered']      = 'Powered By <a href="#">shapoor mardani</a><br /> %s &copy; %s';
 ?>

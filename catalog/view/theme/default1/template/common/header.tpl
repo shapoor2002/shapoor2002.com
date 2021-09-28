@@ -16,16 +16,16 @@
 <?php } ?>
 <?php if ($keywords) { ?>
 <meta name="keywords" content= "<?php echo $keywords; ?>" />
-<?php } ?>
-<script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
-<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+<?php } ?><script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+ <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script> 
+
+<!-- <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" /> 
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />   -->
 <link href="catalog/view/javascript/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet" media="screen" />
+ 
 <script src="view/javascript/jquery/datetimepicker/calendar.js" type="text/javascript"></script>
 <script src="view/javascript/jquery/datetimepicker/moment.farsi.js" type="text/javascript"></script>
 <script src="view/javascript/jquery/datetimepicker/bootstrap-persiandatetimepicker.min.js" type="text/javascript"></script>
-<link href="view/javascript/jquery/datetimepicker/bootstrap-persiandatetimepicker.css" type="text/css" rel="stylesheet" media="screen" />
 <script src="catalog/view/javascript/common-rtl.js" type="text/javascript"></script>
 
 <?php foreach ($styles as $style) { ?>
@@ -41,19 +41,20 @@
 <?php foreach ($analytics as $analytic) { ?>
 <?php echo $analytic; ?>
 <?php } ?>
-<link href="catalog/view/theme/default1/stylesheet/css.css" rel="stylesheet">
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="catalog/view/theme/default1/stylesheet/css.css" rel="stylesheet">
 </head>
-<body class="<?php echo $class; ?>">
-<nav id="top">
-  <div class="container">
+<body class="<?php echo $class; ?> text-warning bg-dark">
+<nav id="top" class="text-warning bg-dark">
+  <div class="container text-warning bg-dark">
     <?php echo $currency; ?>
     <?php echo $language; ?>
-    <div id="top-links" class="nav pull-right">
-      <ul class="list-inline">
+    <div id="top-links" class="nav pull-right text-warning bg-dark">
+      <ul class="list-inline text-warning bg-dark">
         <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
         <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
-          <ul class="dropdown-menu dropdown-menu-right">
+          <ul class="list-inline dropdown-menu dropdown-menu-right">
             <?php if ($logged) { ?>
             <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
             <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
@@ -73,13 +74,13 @@
     </div>
   </div>
 </nav>
-<header>
-  <div class="container">
+<header class="text-warning bg-black">
+  <div class="container text-warning bg-dark">
     <div class="row">
       <div class="col-sm-4">
         <div id="logo">
           <?php if ($logo) { ?>
-          <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
+          <h1><a href="<?php echo $home; ?>"><?php echo $text_a ;?></a></h1>
           <?php } else { ?>
           <h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
           <?php } ?>
@@ -92,13 +93,13 @@
   </div>
 </header>
 <?php if ($categories) { ?>
-<div class="container">
-  <nav id="menu" class="navbar">
+<div class="container ">
+  <nav id="menu" class="navbar text-warning bg-dark">
     <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_category; ?></span>
       <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
     </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav">
+      <ul class="list-inline  " style="display: block;">
         <?php foreach ($categories as $category) { ?>
         <?php if ($category['children']) { ?>
         <li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?></a>

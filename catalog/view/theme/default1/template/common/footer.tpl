@@ -1,5 +1,5 @@
 <footer>
-  <div class="container">
+  <div class="container border border-warning  text-center">
     <div class="row">
       <?php if ($informations) { ?>
       <div class="col-sm-3">
@@ -28,7 +28,7 @@
           <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
         </ul>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 ">
         <h5><?php echo $text_account; ?></h5>
         <ul class="list-unstyled">
           <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
@@ -38,7 +38,7 @@
         </ul>
       </div>
     </div>
-    <hr>
+    <hr class="bg-warning  p-1" />
     <p><?php echo $powered; ?></p>
   </div>
 </footer>

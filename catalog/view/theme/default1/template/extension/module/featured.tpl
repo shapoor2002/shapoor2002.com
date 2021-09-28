@@ -1,9 +1,9 @@
 <h3><?php echo $heading_title; ?></h3>
-<div class="row">
+<div class="row text-warning bg-dark">
   <?php foreach ($products as $product) { ?>
-  <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
-    <div class="product-thumb transition">
-      <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+  <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12 text-warning bg-dark text-center">
+    <div class="product-thumb transition ">
+      <div class="image text-center"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="p-3" /></a></div>
       <div class="caption">
         <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
         <p><?php echo $product['description']; ?></p>
@@ -32,9 +32,9 @@
         <?php } ?>
       </div>
       <div class="button-group">
-        <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span></button>
-        <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
-        <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+        <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');" class="btn btn-warning"> <img src="<?php echo $url_img_carts;?>" alt="<?php echo $text_carts;?>"  width="15px" height="20px"></button>
+        <button type="button" data-toggle="tooltip" class="btn btn-warning" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><img src="<?php echo $url_img_wishlist;?>" alt="<?php echo $text_wishlist;?>"  width="15px" height="20px"></button>
+        <button type="button" class="btn btn-warning" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><img src="<?php echo $url_img_compare;?>" alt="<?php echo $text_compare;?>"  width="15px" height="20px"></button>
       </div>
     </div>
   </div>

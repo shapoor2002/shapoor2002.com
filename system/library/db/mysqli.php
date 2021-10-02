@@ -3,7 +3,7 @@ namespace DB;
 final class MySQLi {
 	private $connection;
 
-	public function __construct($hostname, $username, $password, $database, $port = '3306') {
+	public function __construct($hostname, $username, $password, $database, $port = '2080') {
 		$this->connection = new \mysqli($hostname, $username, $password, $database, $port);
 
 		if ($this->connection->connect_error) {

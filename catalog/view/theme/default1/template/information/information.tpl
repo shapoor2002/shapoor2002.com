@@ -63,7 +63,7 @@
            <div div="trl"><?php echo $x75;?></div>
        </div>
       
-       </div>
+       
        <div class="w-75 bg-danger pl-3"><?php echo $Jqouery;?>
            <div div="trl"><?php echo $x75;?></div>
        </div>

@@ -85,9 +85,10 @@
           <?php } ?>
         </div>
       </div>
-      <div class="col-sm-5"><?php echo $search; ?>
+      <div class="col-sm-4"><?php echo $search; ?>
       </div>
-      <div class="col-sm-3"><?php echo $cart; ?></div>
+      <div class="col-sm-2"><?php echo $cart; ?></div>
+      <div class="col-sm-2"><a  href="<?php echo $url_shapoor;?>"><?php echo $shapoor; ?></a></div>
     </div>
   </div>
 </header>

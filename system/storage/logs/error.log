@@ -1180,3 +1180,13 @@
 2021-10-02 12:01:43 - PHP Notice:  Undefined variable: telephone in C:\xampp\htdocs\shapoor2002.com\catalog\view\theme\default1\template\information\information.tpl on line 34
 2021-10-02 12:01:43 - PHP Notice:  Undefined variable: ravesh in C:\xampp\htdocs\shapoor2002.com\catalog\view\theme\default1\template\information\information.tpl on line 37
 2021-10-02 12:01:43 - PHP Notice:  Undefined variable: url_insta in C:\xampp\htdocs\shapoor2002.com\catalog\view\theme\default1\template\information\information.tpl on line 101
+2021-10-02 12:14:16 - PHP Notice:  Undefined variable: url_insta in C:\xampp\htdocs\shapoor2002.com\catalog\view\theme\default1\template\information\information.tpl on line 28
+2021-10-02 12:14:16 - PHP Notice:  Undefined variable: telephone in C:\xampp\htdocs\shapoor2002.com\catalog\view\theme\default1\template\information\information.tpl on line 34
+2021-10-02 12:14:16 - PHP Notice:  Undefined variable: ravesh in C:\xampp\htdocs\shapoor2002.com\catalog\view\theme\default1\template\information\information.tpl on line 37
+2021-10-02 12:14:16 - PHP Notice:  Undefined variable: url_insta in C:\xampp\htdocs\shapoor2002.com\catalog\view\theme\default1\template\information\information.tpl on line 101
+2021-10-02 12:47:40 - PHP Notice:  Undefined variable: url_shapoor in C:\xampp\htdocs\shapoor2002.com\catalog\view\theme\default1\template\common\header.tpl on line 91
+2021-10-02 12:47:40 - PHP Notice:  Undefined variable: shapoor in C:\xampp\htdocs\shapoor2002.com\catalog\view\theme\default1\template\common\header.tpl on line 91
+2021-10-02 12:47:40 - PHP Notice:  Undefined variable: url_insta in C:\xampp\htdocs\shapoor2002.com\catalog\view\theme\default1\template\information\information.tpl on line 28
+2021-10-02 12:47:40 - PHP Notice:  Undefined variable: telephone in C:\xampp\htdocs\shapoor2002.com\catalog\view\theme\default1\template\information\information.tpl on line 34
+2021-10-02 12:47:40 - PHP Notice:  Undefined variable: ravesh in C:\xampp\htdocs\shapoor2002.com\catalog\view\theme\default1\template\information\information.tpl on line 37
+2021-10-02 12:47:40 - PHP Notice:  Undefined variable: url_insta in C:\xampp\htdocs\shapoor2002.com\catalog\view\theme\default1\template\information\information.tpl on line 101

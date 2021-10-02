@@ -15,4 +15,5 @@ $_['text_checkout']      = 'تسویه حساب';
 $_['text_search']        = 'جستجو';
 $_['text_all']           = 'مشاهده همه';
 $_['text_a']           = 'فروشگاه آذین';
+$_['titel_shapoor']='catalog/view/theme/default1/template/common/shapoor.tpl';
 ?>

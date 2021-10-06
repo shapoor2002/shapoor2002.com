@@ -1,5 +1,11 @@
 <?php echo $header;?>
 <div>
-<h1><?php echo $titel;?></h1>
+<?php if(isset($titel)){ ?>
+<?php foreach($titel as $value){ ?>
+<h1><?php echo $value['titel'];?></h1>
+<?php  } } else{?>
+<h1><?php echo $text_error;?></h1>
+<?php }?>
 </div>
 <?php echo $footer;?>
+

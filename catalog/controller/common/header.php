@@ -70,8 +70,11 @@ class ControllerCommonHeader extends Controller {
 		$data['text_category'] = $this->language->get('text_category');
 		$data['text_all'] = $this->language->get('text_all');
 		$data['text_a'] = $this->language->get('text_a');
+		$data['url_shapoor'] = $this->language->get('url_shapoor');
+		$data['shapoor'] = $this->language->get('shapoor');
 
 		$data['home'] = $this->url->link('common/home');
+		$data['url_shapoor'] = $this->url->link('common/shapoor','',true);
 		$data['wishlist'] = $this->url->link('account/wishlist', '', true);
 		$data['logged'] = $this->customer->isLogged();
 		$data['account'] = $this->url->link('account/account', '', true);

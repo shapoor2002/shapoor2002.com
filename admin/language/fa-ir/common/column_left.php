@@ -1,6 +1,7 @@
 <?php
 // Text
 $_['text_affiliate']                 = 'بازاریاب';
+$_['text_shapoor']                 = 'شاپور';
 $_['text_api']                       = 'API';
 $_['text_attribute']                 = 'خصوصیات';
 $_['text_attribute_group']           = 'گروه خصوصیات';

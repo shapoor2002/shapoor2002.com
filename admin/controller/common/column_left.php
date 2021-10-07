@@ -39,6 +39,13 @@ class ControllerCommonColumnLeft extends Controller {
 				'href'     => $this->url->link('common/dashboard', 'token=' . $this->session->data['token'], true),
 				'children' => array()
 			);
+			$data['menus'][] = array(
+				'id'       => 'menu-shapoor',
+				'icon'	   => 'fa-person',
+				'name'	   => $this->language->get('text_shapoor'),
+				'href'     => $this->url->link('catalog/shapoor', 'token=' . $this->session->data['token'], true),
+				'children' => array()
+			);
 			
 			// Catalog
 			$catalog = array();
@@ -50,6 +57,7 @@ class ControllerCommonColumnLeft extends Controller {
 					'children' => array()		
 				);
 			}
+				
 			
 			if ($this->user->hasPermission('access', 'catalog/product')) {
 				$catalog[] = array(
@@ -833,7 +841,8 @@ class ControllerCommonColumnLeft extends Controller {
 					'href'     => '',
 					'children' => $report
 				);	
-			}		
+			}	
+			
 			
 			// Stats
 			$data['text_complete_status'] = $this->language->get('text_complete_status');

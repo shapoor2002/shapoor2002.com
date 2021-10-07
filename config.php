@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost:2080/shapoor2002.com/');
+define('HTTP_SERVER', 'http://localhost/shapoor2002.com/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost:2080/shapoor2002.com/');
+define('HTTPS_SERVER', 'http://localhost/shapoor2002.com/');
 
 // DIR
 define('DIR_APPLICATION', 'C:/xampp/htdocs/shapoor2002.com/catalog/');

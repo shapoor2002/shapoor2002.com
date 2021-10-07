@@ -7,7 +7,7 @@
       </div>
       <h1><?php echo $titel; ?></h1>
       <ul class="breadcrumb">
-        
+        <li><?php echo $text_list; ?></li>
       </ul>
     </div>
   </div>
@@ -15,7 +15,7 @@
     
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><i class="fa fa-list"></i> <?php echo $text_list; ?></h3>
+        <h3 class="panel-title p-3"><i class="fa fa-list "></i><?php echo $titel;?> </h3>
       </div>
       <div class="panel-body">
         <div class="well">
@@ -32,7 +32,7 @@
             </div>
             <div class="col-sm-6">
               <div class="form-group">
-                <label class="control-label" for="input-status"><?php echo $titel;?></label>
+                <label class="control-label" for="input-status"><?php echo $items;s ?></label>
                 <!--<select name="filter_status" id="input-status" class="form-control">
                   <option value="*"></option>
                   <?php if ($filter_status) { ?>

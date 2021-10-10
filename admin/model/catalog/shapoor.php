@@ -29,9 +29,9 @@ class ModelCatalogShapoor extends Model {
 	}
 	public function getItems() {
 		$query = $this->db->query("SELECT * FROM `os_shapoor`");
-		$this->require->get($query);
 		
-		return $query->fetch_assoc();
+		
+		return $query->rows;
 	}
 
 	

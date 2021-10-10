@@ -32,7 +32,7 @@
             </div>
             <div class="col-sm-6">
               <div class="form-group">
-                <label class="control-label" for="input-status"><?php echo $items;s ?></label>
+                <label class="control-label" for="input-status"><?php $items[0]['titel']; ?></label>
                 <!--<select name="filter_status" id="input-status" class="form-control">
                   <option value="*"></option>
                   <?php if ($filter_status) { ?>

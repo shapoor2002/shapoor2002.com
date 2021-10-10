@@ -1,6 +1,7 @@
 <?php
 class ModelCatalogShapoor extends Model {
-	public function addItem($data) {
+	
+	public function add($data) {
 		$this->db->query("INSERT INTO " . DB_PREFIX . "shapoor SET titel = '" . $this->db->escape($data['titel']) . "',  id= '" . (int)$data['id']."' ");
 
 		$review_id = $this->db->getLastId();

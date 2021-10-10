@@ -5,7 +5,7 @@
     <div class="container-fluid">
       <div class="pull-right">
       </div>
-      <h1><?php echo $titel; ?></h1>
+      <h1><?php echo $text_list; ?></h1>
       <ul class="breadcrumb">
         <li><?php echo $text_list; ?></li>
       </ul>
@@ -15,7 +15,7 @@
     
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title p-3"><i class="fa fa-list "></i><?php echo $titel;?> </h3>
+        <h3 class="panel-title p-3"><i class="fa fa-list "></i><?php echo $text_list;?> </h3>
       </div>
       <div class="panel-body">
         <div class="well">
@@ -32,26 +32,32 @@
             </div>
             <div class="col-sm-6">
               <div class="form-group">
-                <label class="control-label" for="input-status"><?php $items[0]['titel']; ?></label>
-                <!--<select name="filter_status" id="input-status" class="form-control">
-                  <option value="*"></option>
-                  <?php if ($filter_status) { ?>
-                  <option value="1" selected="selected"><?php echo $text_enabled; ?></option>
-                  <?php } else { ?>
-                  <option value="1"><?php echo $text_enabled; ?></option>
+                <label class="control-label" ><?php echo $items[0]['titel']; ?></label>
+                <select name="items" id="input-status" class="form-control">
+                  <option value="*"></option>for="input-status"for="input-status"
+                  <?php if (isset($items)) {
+                     for($i=0;$i<count($items);$i++){?>
+                      <option value="<?php echo $i;?>" selected="selected"><?php echo $items[$i]['titel']; ?></option>
+                  <?php }
+                  }  else { ?>
+                      <option value="."><?php echo $text_error; ?></option>
                   <?php } ?>
-                  <?php if (!$filter_status && !is_null($filter_status)) { ?>
-                  <option value="0" selected="selected"><?php echo $text_disabled; ?></option>
-                  <?php } else { ?>
-                  <option value="0"><?php echo $text_disabled; ?></option>
-                  <?php } ?>
-                </select>-->
+                </select><!---->
               </div>
-              <div class="form-group">
-                <label class="control-label" for="input-date-added"></label>
-                <div class="input-group date">
+              <div class="form-group text-center border border-primary">
+                <?php if($res==true){?>
+                <div class="alert alert-success"></div>
+                <h1 class="p-3"><?php echo $titel2; ?></h1>
+                
+                 <form action="<?php echo $form_add;?>" method="post" class="text-center ">
                  
-            </div>
+                  <input type="hidden" value="<?php echo $id; ?>"/>
+                  <input type="text" class="control-input m-3"  placeholder="<?php echo $input_name;?>" /><br/>
+                  <input type="submit" class="btn btn-primary " value="<?php echo $submit;?>"/>
+                 
+
+                 </form>
+            
           </div>
         </div>
         <form action="<?php echo $delete; ?>" method="post" enctype="multipart/form-data" id="form-review">

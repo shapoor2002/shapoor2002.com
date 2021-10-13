@@ -12,7 +12,7 @@ class ControllerCatalogShapoor extends Controller {
 		$data['input_name']=$this->language->get('input_name');
 		$data['submit']=$this->language->get('submit');
 		//url
-		$data['form_add']=$this->language->get('form_add');
+		$data['form_add']=$this->url->link('controller/shapoor/add','token=' . $this->session->data['token'],true);
 
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');

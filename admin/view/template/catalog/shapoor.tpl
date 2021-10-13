@@ -1,5 +1,6 @@
 <?php echo $header; ?>
-<?php echo $column_left; ?>
+<?php echo $column_left;
+error_reporting(0); ?>
 <div id="content">
   <div class="page-header">
     <div class="container-fluid">
@@ -20,17 +21,8 @@
       <div class="panel-body">
         <div class="well">
           <div class="row">
-            <div class="col-sm-6">
-              <!--<div class="form-group">
-                <label class="control-label" for="input-product"><?php echo $entry_product; ?></label>
-                <input type="text" name="filter_product" value="<?php echo $filter_product; ?>" placeholder="<?php echo $entry_product; ?>" id="input-product" class="form-control" />
-              </div>
-              <div class="form-group">
-                <label class="control-label" for="input-author"><?php echo $entry_author; ?></label>
-                <input type="text" name="filter_author" value="<?php echo $filter_author; ?>" placeholder="<?php echo $entry_author; ?>" id="input-author" class="form-control" />
-              </div>-->
-            </div>
-            <div class="col-sm-6">
+            
+            <div class="col-sm-12">
               <div class="form-group">
                 <label class="control-label" ><?php echo $items[0]['titel']; ?></label>
                 <select name="items" id="input-status" class="form-control">
@@ -45,8 +37,13 @@
                 </select><!---->
               </div>
               <div class="form-group text-center border border-primary">
-                <?php if($res==true){?>
+                <?php if($res==true) { ?>
                 <div class="alert alert-success"></div>
+                <?php } elseif($res=='') { ?>
+                <div class="alert alert-warning"></div>
+                <?php } else { ?>
+                <div class="alert alert-danger"></div>
+                <?php }?>
                 <h1 class="p-3"><?php echo $titel2; ?></h1>
                 
                  <form action="<?php echo $form_add;?>" method="post" class="text-center ">
@@ -63,8 +60,8 @@
         <form action="<?php echo $delete; ?>" method="post" enctype="multipart/form-data" id="form-review">
           <div class="table-responsive">
             <table class="table table-bordered table-hover">
-             <!-- <thead>
-                <tr>
+              <thead>
+                <!--<tr>
                   <td style="width: 1px;" class="text-center"><input type="checkbox" onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
                   <td class="text-left"><?php if ($sort == 'pd.name') { ?>
                     <a href="<?php echo $sort_product; ?>" class="<?php echo strtolower($order); ?>"><?php echo $column_product; ?></a>
@@ -127,3 +124,4 @@
       </div>
     </div>
   </div>
+</div>

@@ -3,7 +3,7 @@
 <!--[if IE 8 ]><html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="ie8"><![endif]-->
 <!--[if IE 9 ]><html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="ie9"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-<html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="bg-dark text-warning">
+<html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="bg-danger ">
 <!--<![endif]-->
 <head>
 <meta charset="UTF-8" />
@@ -21,7 +21,7 @@
 
 <!-- <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" /> 
 <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />   -->
-<link href="catalog/view/javascript/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet" media="screen" />
+
  
 <script src="view/javascript/jquery/datetimepicker/calendar.js" type="text/javascript"></script>
 <script src="view/javascript/jquery/datetimepicker/moment.farsi.js" type="text/javascript"></script>
@@ -40,19 +40,22 @@
 <?php } ?>
 <?php foreach ($analytics as $analytic) { ?>
 <?php echo $analytic; ?>
-<?php } ?>
-<link href="catalog/view/theme/default1/stylesheet/css.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="<?php echo $class; ?> text-warning bg-dark">
-<nav id="top" class="text-warning bg-dark">
-  <div class="container text-warning bg-dark">
+<?php } ?><!--<link href="catalog/view/theme/default1/stylesheet/css.css" rel="stylesheet">-->
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></head>
+<body class="common-home row">
+<div class="col-md-12 bg-danger container">
+<nav id="top" class="bg-dander nav text-right ">
+  <div class=" bg-dander">
     <?php echo $currency; ?>
     <?php echo $language; ?>
-    <div id="top-links" class="nav pull-right text-warning bg-dark">
-      <ul class="list-inline text-warning bg-dark">
-        <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
-        <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
+    <div id="top-links" class=" pull-right  bg-danger">
+      <ul class="nav bg-danger row">
+        <li  class="nav-item p-3"><a  class="nav-link" href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+        <li class="dropdown p-3"><a class="nav-link" href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
           <ul class="list-inline dropdown-menu dropdown-menu-right">
             <?php if ($logged) { ?>
             <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
@@ -66,15 +69,16 @@
             <?php } ?>
           </ul>
         </li>
-        <li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
-        <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
-        <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+        <li  class="nav-item p-3"><a class="nav-link" href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
+        <li class="nav-item p-3"><a class="nav-link" href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
+        <li class="nav-item p-3"><a class="nav-link" href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
       </ul>
     </div>
   </div>
 </nav>
-<header class="text-warning bg-black">
-  <div class="container text-warning bg-dark">
+
+<header class=" bg-dange">
+  <div class="container  bg-danger">
     <div class="row">
       <div class="col-sm-4">
         <div id="logo">
@@ -92,9 +96,10 @@
     </div>
   </div>
 </header>
+
 <?php if ($categories) { ?>
 <div class="container ">
-  <nav id="menu" class="navbar text-warning bg-dark">
+  <nav id="menu" class="navbar  bg-danger">
     <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_category; ?></span>
       <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
     </div>
@@ -124,3 +129,4 @@
   </nav>
 </div>
 <?php } ?>
+</div>

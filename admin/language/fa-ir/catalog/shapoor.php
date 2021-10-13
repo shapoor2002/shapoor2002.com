@@ -9,6 +9,6 @@ $_['text_error']='جدول خالی است!';
 
 //URL
 
-$_['form_add']='catalog/shapoor/add';
+
 
 ?>

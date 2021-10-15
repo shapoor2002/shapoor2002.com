@@ -46,17 +46,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></head>
-<body class="common-home row">
-<div class="col-md-12 bg-danger container">
+<body class="common-home row text-light">
+
+<div class="col-md-12 bg-danger container  " >
 <nav id="top" class="bg-dander nav text-right ">
   <div class=" bg-dander">
     <?php echo $currency; ?>
     <?php echo $language; ?>
     <div id="top-links" class=" pull-right  bg-danger">
-      <ul class="nav bg-danger row">
+      <ul class="nav bg-danger row text-light">
         <li  class="nav-item p-3"><a  class="nav-link" href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
-        <li class="dropdown p-3"><a class="nav-link" href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
-          <ul class="list-inline dropdown-menu dropdown-menu-right">
+        <li class="dropdown p-3  text-light"><a class="nav-link text-light" href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
+          <ul class="list-inline dropdown-menu dropdown-menu-right text-light">
             <?php if ($logged) { ?>
             <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
             <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
@@ -69,9 +70,9 @@
             <?php } ?>
           </ul>
         </li>
-        <li  class="nav-item p-3"><a class="nav-link" href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
-        <li class="nav-item p-3"><a class="nav-link" href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
-        <li class="nav-item p-3"><a class="nav-link" href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+        <li  class="nav-item p-3"><a class="nav-link text-light" href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
+        <li class="nav-item p-3"><a class="nav-link text-light" href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
+        <li class="nav-item p-3"><a class="nav-link  text-light" href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
       </ul>
     </div>
   </div>
@@ -80,20 +81,23 @@
 <header class=" bg-dange">
   <div class="container  bg-danger">
     <div class="row">
+    
       <div class="col-sm-4">
-        <div id="logo">
-          <?php if ($logo) { ?>
-          <h1><a href="<?php echo $home; ?>"><?php echo $text_a ;?></a></h1>
-          <?php } else { ?>
-          <h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
-          <?php } ?>
+        <div class="col-sm-2"><?php echo $cart; ?></div>
+        <div class="col-sm-2"><a class=" text-light" href="<?php echo $url_shapoor;?>"><?php echo $shapoor; ?></a></div>
+      </div>
+      <div class="col-sm-4 mt-3"><?php echo $search; ?>
+      </div>
+        <div class="col-sm-4">
+          <div id="logo">
+            <?php if ($logo) { ?>
+            <h1><a href="<?php echo $home; ?>" class=" text-light"><?php echo $text_a ;?></a></h1>
+            <?php } else { ?>
+           <h1><a href="<?php echo $home; ?>" class=" text-light"><?php echo $name; ?></a></h1>
+            <?php } ?>
+          </div>
         </div>
       </div>
-      <div class="col-sm-4"><?php echo $search; ?>
-      </div>
-      <div class="col-sm-2"><?php echo $cart; ?></div>
-      <div class="col-sm-2"><a  href="<?php echo $url_shapoor;?>"><?php echo $shapoor; ?></a></div>
-    </div>
   </div>
 </header>
 
@@ -130,3 +134,4 @@
 </div>
 <?php } ?>
 </div>
+<div style="height: 100px;"></div>

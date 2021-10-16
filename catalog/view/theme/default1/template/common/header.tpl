@@ -3,7 +3,7 @@
 <!--[if IE 8 ]><html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="ie8"><![endif]-->
 <!--[if IE 9 ]><html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="ie9"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-<html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="bg-danger ">
+<html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="bg-light">
 <!--<![endif]-->
 <head>
 <meta charset="UTF-8" />
@@ -55,7 +55,7 @@
   margin-top: 100px;
 }</style>
 </head>
-<body class="common-home row text-light">
+<body class=" row text-light">
 
 <div id="top"  class="col-md-12 bg-danger container" >
 <nav class="bg-dander nav text-right top_mune">
@@ -145,4 +145,3 @@
 </div>
 <div style="height: 120px; width:100%;">
 </div>
-<div ></div>

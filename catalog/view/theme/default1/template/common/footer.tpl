@@ -1,4 +1,4 @@
-<footer class="col-12">
+<footer class="col-12 mt-2">
   <div class=" border border-danger text-center">
     <div class="row">
       <?php if ($informations) { ?>

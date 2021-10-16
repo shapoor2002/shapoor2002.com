@@ -1,4 +1,5 @@
-<h3><?php echo $heading_title; ?></h3>
+<h3 class="text-dark text-right bg-light p-2" style="border-right: 3px solid #b80000;"><?php echo $heading_title; ?></h3>
+
 <div class="row  bg-light">
   <?php foreach ($products as $product) { ?>
   <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12   text-center">

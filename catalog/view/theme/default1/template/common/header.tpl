@@ -45,11 +45,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>#top {
+  position: fixed;
+  z-index:10;
+}
+
+#content {
+  margin-top: 100px;
+}</style>
+</head>
 <body class="common-home row text-light">
 
-<div class="col-md-12 bg-danger container  " >
-<nav id="top" class="bg-dander nav text-right ">
+<div id="top"  class="col-md-12 bg-danger container" >
+<nav class="bg-dander nav text-right top_mune">
   <div class=" bg-dander">
     <?php echo $currency; ?>
     <?php echo $language; ?>
@@ -134,4 +143,6 @@
 </div>
 <?php } ?>
 </div>
-<div style="height: 100px;"></div>
+<div style="height: 120px; width:100%;">
+</div>
+<div ></div>
